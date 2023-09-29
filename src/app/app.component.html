@@ -1,26 +1,26 @@
 <!--Desktop vers-->
-<section class="bg-[#1e1f29] h-screen flex flex-col justify-between select-none">
-  <div class="grid grid-cols-1 place-items-center">
+<section class="hidden lg:bg-[#1e1f29] lg:h-screen lg:flex lg:flex-col lg:justify-between lg:select-none">
+  <div class="lg:grid lg:grid-lg:cols-1 lg:place-items-center">
     <h1
       class="text-white font-bold grid place-items-center mt-[120px] tracking-[10px] text-2xl uppercase"
     >
       We're launching soon
     </h1>
 
-    <div class="grid grid-cols-4 gap-6">
+    <div class="lg:grid lg:grid-cols-4 lg:gap-6">
     <!-- days cards-->
-    <div class="mt-12 flex flex-col items-center justify-center">
+    <div class="lg:mt-12 lg:flex lg:flex-col lg:items-center lg:justify-center">
       <!-- card number-->
       <div class="flex flex-col justify-center items-center relative">
         <div
-        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg lg:py-12 lg:px-24 relative overflow-hidden"
         >
-        <h1 class="text-[#da5072] font-bold text-[90px] absolute top-[33px]">{{days}}</h1>
+        <h1 class="text-[#da5072] font-bold text-[90px] absolute lg:top-[33px] top-0">{{days}}</h1>
       </div>
         <div
-        class="bg-[#343650] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] grid place-items-center rounded-lg lg:py-12 lg:px-24  relative overflow-hidden"
         >
-        <h1 class="text-[#da5072] font-bold text-[90px] absolute bottom-[24px]">{{days}}</h1>
+        <h1 class="text-[#da5072] font-bold text-[90px] absolute lg:bottom-[24px] bottom-[-6px]">{{days}}</h1>
       </div>
       </div>
       <!-- end card number-->
@@ -36,14 +36,14 @@
       <!-- card number-->
       <div class="flex flex-col justify-center items-center relative">
         <div
-        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg lg:py-12 lg:px-24 relative overflow-hidden"
         >
-        <h1 class="text-[#da5072] font-bold text-[90px] absolute top-[33px]">{{hr}}</h1>
+        <h1 class="text-[#da5072] font-bold text-[90px] absolute lg:top-[33px] top-0">{{hr}}</h1>
       </div>
         <div
-        class="bg-[#343650] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] grid place-items-center rounded-lg lg:py-12 lg:px-24 relative overflow-hidden"
         >
-        <h1 class="text-[#da5072] font-bold text-[90px] absolute bottom-[24px]">{{hr}}</h1>
+        <h1 class="text-[#da5072] font-bold text-[90px] absolute lg:bottom-[24px] bottom-[-6px]">{{hr}}</h1>
       </div>
       </div>
       <!-- end card number-->
@@ -59,12 +59,12 @@
       <!-- card number-->
       <div class="flex flex-col justify-center items-center relative">
         <div
-        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg lg:py-12 lg:px-24 py-8 px-16 relative overflow-hidden"
         >
         <h1 class="text-[#da5072] font-bold text-[90px] absolute top-[33px]">{{min}}</h1>
       </div>
         <div
-        class="bg-[#343650] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] grid place-items-center rounded-lg lg:py-12 lg:px-24 py-8 px-16 relative overflow-hidden"
         >
         <h1 class="text-[#da5072] font-bold text-[90px] absolute bottom-[24px]">{{min}}</h1>
       </div>
@@ -82,12 +82,12 @@
       <!-- card number-->
       <div class="flex flex-col justify-center items-center relative">
         <div
-        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg lg:py-12 lg:px-24 py-8 px-16 relative overflow-hidden"
         >
         <h1 class="text-[#da5072] font-bold text-[90px] absolute top-[33px]">{{sc}}</h1>
       </div>
         <div
-        class="bg-[#343650] grid place-items-center rounded-lg py-12 px-24 relative overflow-hidden"
+        class="bg-[#343650] grid place-items-center rounded-lg lg:py-12 lg:px-24 py-8 px-16 relative overflow-hidden"
         >
         <h1 class="text-[#da5072] font-bold text-[90px] absolute bottom-[24px]">{{sc}}</h1>
       </div>
@@ -105,7 +105,119 @@
 
   </div>
   <div>
-    <img src="../assets/pattern-hills.svg" alt="" />
+    <img class="w-full" src="../assets/pattern-hills.svg" alt="" />
   </div>
 </section>
 <!--end Desktop vers-->
+
+
+<!-- Mobile vers-->
+<section class="lg:hidden bg-[#1e1f29] h-[100vh] flex flex-col justify-between select-none pl-1 overflow-hidden">
+  <h1
+      class="text-white text-center font-bold grid place-items-center mt-[60px] tracking-[10px] text-2xl uppercase"
+    >
+      We're launching <br> soon
+    </h1>
+
+    <!-- cards countdwon-->
+    <div class="grid grid-cols-4 gap-5 mx-4">
+
+      <!-- Days card-->
+      <div class="mt-12 grid grid-cols-1 place-items-center">
+        <!-- card number-->
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+          class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute  top-[-4px]">{{days}}</h1>
+        </div>
+          <div
+          class="bg-[#343650] grid place-items-center rounded-lg py-6 px-10  relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute bottom-[-6px]">{{days}}</h1>
+        </div>
+        </div>
+        <!-- end card number-->
+
+        <span class="uppercase mt-4 font-bold text-gray-400 tracking-[5px] text-[10px]"
+          >days</span
+        >
+      </div>
+      <!-- end Days card-->
+
+      <!-- hours card-->
+      <div class="mt-12 grid grid-cols-1 place-items-center">
+        <!-- card number-->
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+          class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute  top-[-4px]">{{hr}}</h1>
+        </div>
+          <div
+          class="bg-[#343650] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute bottom-[-6px]">{{hr}}</h1>
+        </div>
+        </div>
+        <!-- end card number-->
+
+        <span class="uppercase mt-4 font-bold text-gray-400 tracking-[5px] text-[10px]"
+          >hours</span
+        >
+      </div>
+      <!-- end hours card-->
+
+      <!-- min card-->
+      <div class="mt-12 grid grid-cols-1 place-items-center">
+        <!-- card number-->
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+          class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute  top-[-4px]">{{min}}</h1>
+        </div>
+          <div
+          class="bg-[#343650] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute bottom-[-6px]">{{min}}</h1>
+        </div>
+        </div>
+        <!-- end card number-->
+
+        <span class="uppercase mt-4 font-bold text-gray-400 tracking-[5px] text-[10px]"
+          >minutes</span
+        >
+      </div>
+      <!-- end min card-->
+
+      <!-- seconds card-->
+      <div class="mt-12 grid grid-cols-1 place-items-center">
+        <!-- card number-->
+        <div class="flex flex-col justify-center items-center relative">
+          <div
+          class="bg-[#343650] brightness-[85%] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute  top-[-4px]">{{sc}}</h1>
+        </div>
+          <div
+          class="bg-[#343650] grid place-items-center rounded-lg py-6 px-10 relative overflow-hidden"
+          >
+          <h1 class="text-[#da5072] font-bold text-[70px] absolute bottom-[-6px]">{{sc}}</h1>
+        </div>
+        </div>
+        <!-- end card number-->
+
+        <span class="uppercase mt-4 font-bold text-gray-400 tracking-[5px] text-[10px]"
+          >seconds</span
+        >
+      </div>
+      <!-- end seconds card-->
+
+    </div>
+    <!-- end cards countdwon-->
+    <div>
+      <img src="../assets/pattern-hills.svg" alt="" />
+    </div>
+</section>
+<!-- end Mobile vers-->
